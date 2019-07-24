@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		
+	<meta name="Description" content="Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore accessories, entertainment, and expert device support." />
+	<meta property="og:title" content="Apple" />
+	<meta property="og:description" content="Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore accessories, entertainment, and expert device support." />
+	<meta property="og:url" content="https://www.apple.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:image" content="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?201809210816" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Apple" />
+
+    <title>CSS GRID</title>
+    
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="grid.css">
+
+  </head>
+  
+<body>
+<style>
+  .grid-row > div {
+    background-color: #ffafaf;
+    height: 50px;
+/*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
+    color: #fff;
+  }
+  
+/* GRID */
+
+:root {
+  --grid-gap: 20px;
+}
+.grid-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+  
+@media(min-width: 768px){.grid-container{width: 750px;}}
+@media(min-width: 992px){.grid-container{width: 970px;}}
+@media(min-width: 1200px){.grid-container{width: 1170px;}}
+  
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: var(--grid-gap);
+  margin-bottom: var(--grid-gap);
+}
+  
+.col-12,.col-11,.col-10,.col-9,.col-8,.col-7,.col-6,.col-5,.col-4,.col-3,.col-2,.col-1{grid-column:span 12;}
+  
+@media (min-width: 768px) {
+  .col-12{grid-column:span 12;}
+  .col-11{grid-column:span 11;}
+  .col-10{grid-column:span 10;}
+  .col-9{grid-column:span 9;}
+  .col-8{grid-column:span 8;min-width: 66.66%}
+  .col-7{grid-column:span 7;}
+  .col-6{grid-column:span 6;}
+  .col-5{grid-column:span 5;}
+  .col-4{grid-column:span 4;}
+  .col-3{grid-column:span 3;}
+  .col-2{grid-column:span 2;}
+  .col-1{grid-column:span 1;}
+}
+
+</style>
+<div class="grid-container">
+  <div class="grid-row center">
+      <div class="col-12 ">col-12</div>
+  </div> 
+  <div class="grid-row">
+      <div class="col-11">col-11</div>
+      <div class="col-1">col-1</div>
+  </div>
+  <div class="grid-row">
+      <div class="col-10">col-10</div>
+      <div class="col-2">col-2</div>
+  </div>
+  <div class="grid-row">
+      <div class="col-9">col-9</div>
+      <div class="col-3">col-3</div>
+  </div> 
+  <div class="grid-row">
+      <div class="col-8">col-8</div>
+      <div class="col-4">col-4</div>
+  </div>
+  <div class="grid-row">
+      <div class="col-7">col-7</div>
+      <div class="col-5">col-5</div>
+  </div>
+   <div class="grid-row">
+      <div class="col-6">col-6</div>
+      <div class="col-6">col-6</div>
+  </div>
+  <div class="grid-row">
+      <div class="col-5">col-5</div>
+      <div class="col-7">col-7</div>
+  </div>
+  <div class="grid-row">
+      <div class="col-4">col-4</div>
+      <div class="col-8">col-8</div>
+  </div> 
+  <div class="grid-row">
+      <div class="col-3">col-3</div>
+      <div class="col-9">col-9</div>
+  </div>
+  <div class="grid-row">
+      <div class="col-2">col-2</div>
+      <div class="col-10">col-10</div>
+  </div>
+  <div class="grid-row">
+      <div class="col-1">col-1</div>
+      <div class="col-11">col-11</div>
+  </div>         
+</div>
+	
+
+
+    
+    
+
+  </body>
+  
+</html>
+
